@@ -8,59 +8,59 @@ public class TheInfiniteTerrainSystem {
 	private String name;
 	private String homeland;
 	private int age;
-	private int finishPointNS;
-	private int finishingPointEW;
-	private int PlayerLocationNS;
-	private int PlayerLocationEW;
+	private int finishPointY;
+	private int finishingPointX;
+	private int PlayerLocationY;
+	private int PlayerLocationX;
 	private String finale;
 	private Scanner scanner = new Scanner(System.in);
 
-	public int getFinishingPointEW() {
-		return finishingPointEW;
+	public int getFinishingPointX() {
+		return finishingPointX;
 	}
 
-	public void setFinishingPointEW(int finishingPointEW) {
-		this.finishingPointEW = finishingPointEW;
+	public void setFinishingPointX(int finishingPointX) {
+		this.finishingPointX = finishingPointX;
 	}
 
-	public int getPlayerLocationEW() {
-		return PlayerLocationEW;
+	public int getPlayerLocationX() {
+		return PlayerLocationX;
 	}
 
-	public void setPlayerLocationEW(int playerLocationEW) {
-		PlayerLocationEW = playerLocationEW;
+	public void setPlayerLocationX(int playerLocationX) {
+		PlayerLocationX = playerLocationX;
 	}
 
 	private String movement;
 
-	public int getFinishPointNS() {
-		return finishPointNS;
+	public int getFinishPointY() {
+		return finishPointY;
 	}
 
-	public void setFinishPointNS(int finishPointNS) {
-		this.finishPointNS = finishPointNS;
+	public void setFinishPointY(int finishPointY) {
+		this.finishPointY = finishPointY;
 	}
 
-	public int getPlayerLocationNS() {
-		return PlayerLocationNS;
+	public int getPlayerLocationY() {
+		return PlayerLocationY;
 	}
 
-	public void setPlayerLocationNS(int PlayerLocationNS) {
-		this.PlayerLocationNS = PlayerLocationNS;
+	public void setPlayerLocationY(int PlayerLocationY) {
+		this.PlayerLocationY = PlayerLocationY;
 	}
 
 	public void Begin() {
 		System.out.println(
-				"\nYour head hurts, dizzy, feeling sick, what happened? \nYou rub your eyes as you begin to adjust to your surroundings,"
-						+ "you look to be in a clearing, in what seems to be a swamp. \nSurrounded by grey trees and marshy swampland, you have no idea how you got here."
+				"\nYour head hurts, dizzy, feeling sick, what happened? \nYou rub your eyes as you begin to adjust to your surroundings, "
+						+ "you look to be in a clearing, in what seems to be a swamp. \nSurrounded by grey trees and marshy swampland, you have no idea how you got here. "
 						+ "As you start to come around more, you notice four pathways leading out of the clearing. \nAs you begin to pick yourself up and dust yourself off, a large crow "
-						+ "soars down from above, perching on a brach that pertrudes from one of the grey oaks. \nIt is unlike any crow you''ve ever seen, much larger, much more sinister, jet black in colour,"
-						+ "the crow seems to be examining you, and then it opens its beak. \n''Hello there'' it begins, it speaks with a slow, calm, but menacing voice, ''I see you''ve stumbled into the swamplands, I do wonder your purpose here.''"
-						+ "it continues, ''''Before you set off into the depths of the swamp, I must ask you a few questions.''''");
+						+ "soars down from above, perching on a branch that pertrudes from one of the grey oaks. \nIt is unlike any crow you've ever seen, much larger, more sinister, jet black in colour, "
+						+ "the crow seems to be examining you... \nThen, it speaks. \n''Hello there...'' \nit begins, it speaks with a slow, calm, but menacing voice, \n''I see you've stumbled into the swamplands, I do wonder your purpose here.'' "
+						+ "\nIt continues, \n''Before you set off into the depths of the swamp, I must ask you a few questions.''");
 
 		System.out.println("\n''Tell me, what is your name?''");
 		name = scanner.nextLine();
-		System.out.println("''Well then, welcome to my swamp " + name + ", I hope you find it, homely friend.''");
+		System.out.println("''Well then, welcome to my swamp " + name + ", I hope you find it, homely, friend.''");
 
 		System.out.println("''Where do you come from?''");
 		homeland = scanner.nextLine();
@@ -75,50 +75,50 @@ public class TheInfiniteTerrainSystem {
 					"''Aha, a young traveller, well I do hope the swamplands treat you kindly, there are some dark and dangerous things out there you know, I would proceed with the upmost caution.''");
 		} else if (age >= 18 && age < 40) {
 			System.out.println(
-					"''I see, a young adventurer looking to prove their might ey? Thinking you can conqour the swamplands is that it, well well, we will see how you fare out there.''");
+					"''I see, a young adventurer looking to prove their might ey? Thinking you can conquer the swamplands is that it, well well, we will see how you fare out there.''");
 		} else {
 			System.out.println(
-					"''An old soul, come to make your final peace with the swamplands no? Lets see if those who lurk here will accept your peace.''");
+					"''An old soul, come to make your final peace with the swamplands no? Let's see if those who lurk here will accept your peace.''");
 		}
 		System.out.println(
 				"\n''Seen as you have entertained my questions, here is a little gift from me to you, there that rock behind you.''"
-						+ " The crow gestures with its monstrously large wing to a rock just over your left shoudler, \n''That there rock contains a special item, a compass of sorts.'' "
+						+ " \nThe crow gestures with its monstrously large wing to a rock just over your left shoudler, \n''That there rock contains a special item, a compass of sorts.'' "
 						+ "\nYou lift the rock to find a small rusty metallic object laying on the ground, you pick it up to examine it closer."
-						+ "\n''Now this is not just any compass" + name
-						+ ", this compass will lead you out of the swamp if you so desire, to the greatest treasure of your dreams. It will along the way also point you towards the, ahem,'' The crow chuckles with the next word, '' interesting features that lay in wait in the swampland''"
+						+ "\n''Now this is not just any compass " + name
+						+ ", this compass will lead you out of the swamp if you so desire, to the treasure of your dreams. It will along the way also point you towards the, ahem,'' \nThe crow chuckles with the next word, \n''interesting features that lay in wait in the swampland''"
 						+ "\nYou wodner what this devilish bird means, is he a friend? A foe? Will this compass truly lead you to safety? Or is it just a ploy, so you lose yourself to the swampland forever?"
 						+ "\n''I see the concern on your face " + name
 						+ ", you need not worry, I am simply a guide to you and those alike, who find themselves lost, scared, no knowledge of how they got here.''"
 						+ "\n''Well trust me when I say this " + name
-						+ ", all will be revealed soon enough.'' \nAnd with that, the crow opened his gigantic wings, and with a swift flap, was away, lost as it blended with the grey sky."
+						+ ", all will be revealed soon enough.'' \nAnd with that, the crow opens his gigantic wings, and with a swift flap, flies away, lost as it blends with the grey sky."
 						+ "\nWhat are you to do, you wonder, I guess you only have one option, to consult the compass.");
 
 	}
 
 	public void Journey() {
 
-		Random finishNS = new Random();
-		setFinishPointNS(finishNS.nextInt(10));
-		Random finishEW = new Random();
-		setFinishingPointEW(finishEW.nextInt(10));
+		Random finishY = new Random();
+		setFinishPointY(finishY.nextInt(10));
+		Random finishX = new Random();
+		setFinishingPointX(finishX.nextInt(10));
 		// finishPoint = getFinishPoint() + 20;
 		// System.out.println("Finish point = " + getFinishPoint());
-		Random startNS = new Random();
-		setPlayerLocationNS(startNS.nextInt(10));
-		Random startEW = new Random();
-		setPlayerLocationEW(startEW.nextInt(10));
+		Random startY = new Random();
+		setPlayerLocationY(startY.nextInt(10));
+		Random startX = new Random();
+		setPlayerLocationX(startX.nextInt(10));
 
 		System.out.println(
-				"Looking down at the compass you see the needle flickling back and forth, you remeber what the crow said,"
+				"\nLooking down at the compass you see the needle flickling back and forth, you remember what the crow said,"
 						+ "\n\n'This compass will lead you out of the swamp if you so desire, to the greatest treasure of your dreams. It will point towards the interesting features of the swampland'"
-						+ "\n\nYou question what lies ahead, as the compass suggests there are many points of interets around this clearing."
-						+ "\nAs the compass needle won't settle right now, you decide you have only one option, to make a choice of which path to take and start your journey blind, hopeful that the compass will kick in as you journey away from the clearing."
+						+ "\n\nYou question what lies ahead, as the compass suggests there are many points of interests around this clearing."
+						+ "\nAs the compass needle won't settle right now, you decide you have only one option, to make a choice of which path to take and start your journey blind, hopeful that the compass will kick in as you venture away from the clearing."
 						+ "\nYou take a long at each path that lays in front of you, the western path looks overgrown, dense with overhanging branches and shrubbery, but still a managable pathway."
 						+ "\nThe eastern path looks almost dired out, as though resembling a desert; it seems the sun beats down on it day and night and not a drop of rain ever falls on the eastern part of the swamp."
-						+ "\nLooking towards the North, the path seems dark, almost plumeting into complete darkness, you can barley see past the first few rows of trees. You mannage to make out one faint structure in the distance, you can't quite tell what it is, but it seems to resemble some sort of tower."
-						+ "\nThe south path looks the most inviting, the trees seem less grey than those on the other paths; the sun breaks through the trees more, lighting up the path more so than the others; you even see some flowers growing on one of the branches far along. Is this the way out, or just trick to lure you further into the depths of the swampland? ");
+						+ "\nLooking towards the North, the path seems dark, almost plumeting into complete darkness, you can barley see past the first few rows of trees. You mannage to make out one faint structure in the distance, you can't quite tell what it is, potentially a tower of some sort?."
+						+ "\nThe south path looks the most inviting, the trees seem less grey than those on the other paths; the sun breaks through the trees more, lighting up the path more so; you even see some flowers growing on one of the branches far along. Is this the way out, or just trick to lure you further into the depths of the swampland? ");
 
-		while (PlayerLocationNS != getFinishPointNS() && PlayerLocationEW != getFinishingPointEW()) {
+		while (PlayerLocationY != getFinishPointY() | PlayerLocationX != getFinishingPointX()) {
 
 			System.out.println("\nWhich path should you take?(north/south/west/east)");
 			movement = scanner.nextLine();
@@ -127,65 +127,65 @@ public class TheInfiniteTerrainSystem {
 			case "north":
 				System.out.println("You have chosen to go North.");
 
-				PlayerLocationNS++;
+				PlayerLocationY++;
 				break;
 			case "south":
 				System.out.println("You have chosen to go South");
 
-				PlayerLocationNS--;
+				PlayerLocationY--;
 				break;
 			case "east":
 				System.out.println("You have chosen to go East");
-				PlayerLocationEW--;
+				PlayerLocationX++;
 				break;
 			case "west":
 				System.out.println("You have chosen to go West");
-				PlayerLocationEW++;
+				PlayerLocationX--;
 				break;
 			}
 
-			if (PlayerLocationNS > getFinishPointNS() & PlayerLocationEW > getFinishingPointEW()) {
+			if (PlayerLocationY > getFinishPointY() & PlayerLocationX > getFinishingPointX()) {
 				System.out.println(
 						"\nThe compass glows as you hold it in your grasp. The needle shoots to south, then to the west, then to the south again. It continues fluctuating in this fashion."
 								+ "\nAlmost suggesting your goal lies in a south-western direction. "
 								+ "\nThe question is, do you follow the compass, or heed your own path?");
 
-			} else if (PlayerLocationNS > getFinishPointNS() & PlayerLocationEW < getFinishingPointEW()) {
+			} else if (PlayerLocationY > getFinishPointY() & PlayerLocationX < getFinishingPointX()) {
 				System.out.println(
 						"\nThe compass glows as you hold it in your grasp. The needle shoots to south, then to the east, then to the south again. It continues fluctuating in this fashion."
 								+ "\nAlmost suggesting your goal lies in a south-eastern direction. "
 								+ "\nThe question is, do you follow the compass, or heed your own path?");
-			} else if (PlayerLocationNS > getFinishPointNS() & PlayerLocationEW == getFinishingPointEW()) {
+			} else if (PlayerLocationY > getFinishPointY() & PlayerLocationX == getFinishingPointX()) {
 				System.out.println(
 						"\nThe compass glows as you hold it in your grasp. The needle shoots to south, and stays true to its direction."
 								+ "\nIt seems the compass wants you to head directly south."
 								+ "\nThe question is, do you follow the compass, or heed your own path?");
-			} else if (PlayerLocationNS < getFinishPointNS() & PlayerLocationEW < getFinishingPointEW()) {
+			} else if (PlayerLocationY < getFinishPointY() & PlayerLocationX < getFinishingPointX()) {
 				System.out.println(
 						"\nThe compass glows as you hold it in your grasp. The needle shoots to north, then to the east, then north again. It continues to fluctuate in this fashion. "
 								+ "\nAlmost suggesting your gola lies in a north-eastern direction."
 								+ "\nThe question is, do you follow the compass, or heed your own path?");
-			} else if (PlayerLocationNS < getFinishPointNS() & PlayerLocationEW > getFinishingPointEW()) {
+			} else if (PlayerLocationY < getFinishPointY() & PlayerLocationX > getFinishingPointX()) {
 				System.out.println(
 						"\nThe compass glows as you hold it in your grasp. The needle shoots to north, then to the west, then north again. It continues to fluctuate in this fashion. "
 								+ "\nAlmost suggesting your gola lies in a north-western direction."
 								+ "\nThe question is, do you follow the compass, or heed your own path?");
-			} else if (PlayerLocationNS < getFinishPointNS() & PlayerLocationEW == getFinishingPointEW()) {
+			} else if (PlayerLocationY < getFinishPointY() & PlayerLocationX == getFinishingPointX()) {
 				System.out.println(
 						"\nThe compass glows as you hold it in your grasp. The needle shoots to north, and stays true to its direction."
 								+ "\nIt seems the compass wants you to head directly north."
 								+ "\nThe question is, do you follow the compass, or heed your own path?");
-			} else if (PlayerLocationNS == getFinishPointNS() & PlayerLocationEW < getFinishingPointEW()) {
+			} else if (PlayerLocationY == getFinishPointY() & PlayerLocationX < getFinishingPointX()) {
 				System.out.println(
 						"\nThe compass glows as you hold it in your grasp. The needle shoots to east, then stays true to its direction."
 								+ "\nIt seems the compass wants you to head directly east."
 								+ "\nThe question is, do you follow the compass, or heed your own path?");
-			} else if (PlayerLocationNS == getFinishPointNS() & PlayerLocationEW > getFinishingPointEW()) {
+			} else if (PlayerLocationY == getFinishPointY() & PlayerLocationX > getFinishingPointX()) {
 				System.out.println(
 						"\nThe compass glows as you hold it in your grasp. The needle shoots to west, then stays true to its direction."
 								+ "\nIt seems the compass wants you to head directly west."
 								+ "\nThe question is, do you follow the compass, or heed your own path?");
-			} else if (PlayerLocationNS == getFinishPointNS() & PlayerLocationEW == getFinishingPointEW()) {
+			} else if (PlayerLocationY == getFinishPointY() & PlayerLocationX == getFinishingPointX()) {
 				System.out.println(
 						"\nYou have found your way out, you come to a clearing, what is it you see, you walk on for a closer look.");
 				break;
