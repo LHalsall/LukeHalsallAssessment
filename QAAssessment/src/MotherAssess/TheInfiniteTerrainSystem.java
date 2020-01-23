@@ -219,7 +219,7 @@ public class TheInfiniteTerrainSystem {
 			System.out.println(
 					"\n\nBroken, a tortured body and mind from your time amongst the swampland, you can't bring yoursself to open the door."
 							+ "\nYou panic, what if something inside is listening, it can hear your breaths, it's coming to get you no matter what your decision."
-							+ "\nYou make a mad dash back to the swampland, offering no satisfaction to the creature that lays in wait, you cackle as you run away, a mad laugh of warped victory, udner beleifs you've outsmarted the creature and will live to see another day."
+							+ "\nYou make a mad dash back to the swampland, offering no satisfaction to the creature that lays in wait, you cackle as you run away, a mad laugh of warped victory, under beleifs you've outsmarted the creature and will live to see another day."
 							+ "\nYou head back in to the swampland, deep inside, never to return to the church again."
 							+ "\nHave you saved yourself, or have you left behind your greatest treasure?"
 							+ "\nMaybe one day you'll find out, but today, is not that day.");
